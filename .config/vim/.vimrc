@@ -18,7 +18,8 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " # plugins
 call vundle#begin()
 "Plugin 'dracula/vim',{'name':'dracula'}
-Plugin 'zefei/simple-dark'
+"Plugin 'zefei/simple-dark'
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'frazrepo/vim-rainbow'
 Plugin 'preservim/nerdtree'
 Plugin 'itchyny/lightline.vim'
@@ -44,7 +45,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " ## lightline
 set laststatus=2
 let g:lightline = {
-      \ 'colorscheme': 'seoul256',
+      \ 'colorscheme': 'nord',
       \ }
 
 " ## easyclip
@@ -59,7 +60,8 @@ set number
 "set rnu
 syntax on
 set t_Co=256
-colorscheme simple-dark
+"colorscheme simple-dark
+colorscheme nord
 set tabstop=4
 set splitbelow
 set splitright

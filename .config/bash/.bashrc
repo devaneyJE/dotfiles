@@ -150,6 +150,9 @@ export PATH="$HOME/repos/devaneyJE/toolbox:$PATH"
 export PATH="$HOME/go/bin:$PATH"
 
 ## aliases
+
+[ -f ~/.config/shell/aliasrc ] && source "$HOME/.config/shell/aliasrc"
+
 alias ls='ls -Fh'
 alias sudos='sudo env "PATH=$PATH"'
 alias vibashrc="vim $HOME/.bashrc"

@@ -24,6 +24,18 @@ super + s
 super + Escape
 	pkill -USR1 -x sxhkd
 
+XF86AudioRaiseVolume
+	amixer -c 1 set Master unmute && amixer -c 1 set Front unmute && amixer -c 1 set Surround unmute && amixer -c 1 set Center unmute && amixer -c 1 set LFE unmute && amixer -c 1 set Master 1db+
+
+XF86AudioLowerVolume
+	amixer -c 1 set Master 1db-
+
+XF86AudioAudioMute
+	amixer -c 1 set Master mute
+
+XF86AudioAudioPlay
+	amixer -c 1 set Master unmute && amixer -c 1 set Front unmute && amixer -c 1 set Surround unmute && amixer -c 1 set Center unmute && amixer -c 1 set LFE unmute
+
 #
 # bspwm hotkeys
 #

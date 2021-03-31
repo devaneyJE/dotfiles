@@ -46,6 +46,7 @@ alias doompurge="~/.emacs.d/bin/doom purge"
 
 ## git
 alias gconf="/usr/bin/git --git-dir=$HOME/repos/devaneyJE/dotfiles --work-tree=$HOME"
+alias confadd="gconf add -u ~/.config && gconf status"
 
 ### path adjustments
 export PATH="$HOME/scripts:$PATH"

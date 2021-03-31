@@ -16,4 +16,5 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 #
-export ZDOTDIR="{XDG_CONFIG_HOME:-$HOME/.config}/zsh"
+export ZDOTDIR="$HOME/.config/zsh"
+export ADOTDIR="$HOME/.config/zsh/.antigen"
