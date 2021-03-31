@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/jonah/pix/wallpapers/bg_3.jpg' 

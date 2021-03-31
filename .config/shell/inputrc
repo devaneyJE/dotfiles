@@ -1,0 +1,15 @@
+$include /etc/inputrc
+set editing-mode vi
+$if mode=vi
+
+# vi command binds
+set keymap vi-command
+Control-l: clear-screen
+Control-a: beginning-of-line
+
+# vi insert binds
+set keymap vi-insert
+Control-l: clear-screen
+Control-a: beginning-of-line
+
+$endif
