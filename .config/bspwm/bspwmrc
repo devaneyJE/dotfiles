@@ -13,16 +13,11 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Emacs state=tiled
 
 # custom
 set -U SXHKD_SHELL /bin/bash &
 
-#exec $HOME/.config/polybar/launch.sh
 #exec $HOME/.config/polybar/scripts/pywal.sh $HOME/pix/wallpapers/bg_3.jpg&
 exec $HOME/.config/polybar/launch.sh

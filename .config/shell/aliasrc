@@ -34,3 +34,6 @@ alias confadd="gconf add -u ~/.config && gconf status"
 ##
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
+
+alias rm="rm -i"
+#alias rmr="rm -ri"
