@@ -55,7 +55,6 @@ xsetroot -cursor_name left_ptr &
 xinput set-prop 8 299 -0.6 &
 
 # monitor-related
-#nitrogen --restore &
 wal -R &
 ~/.config/feh/.fehbg &
 redshift -P -O 4200 &
