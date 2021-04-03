@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill '/home/jonah/pix/wallpapers/bg_3.jpg' 
+feh --no-fehbg --bg-fill '/home/jonah/pix/wallpapers/polybar-themes/bg_3.jpg' 
