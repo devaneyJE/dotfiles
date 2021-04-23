@@ -6,3 +6,4 @@
 
 # histfile
 export HISTFILE=$HOME/.config/bash/.bash_history
+source "$HOME/.cargo/env"
