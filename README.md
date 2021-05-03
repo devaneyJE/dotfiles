@@ -19,12 +19,14 @@ Contained in this repo are the configuration files for various utilities used on
 
 ### Window Manager
 I am using the [bspwm](https://github.com/baskerville/bspwm) tiling window manager. This is paired with [sxhkd](https://github.com/baskerville/sxhkd) as the hotkey daemon for managing keybinds.
+
 The included [bspwmrc](/.config/bspwm/bspwmrc) file contains little beyond the basic default, adjusting workspaces for two monitors and launching both `sxhkd` and [polybar](#bar).
+
 The [sxhkdrc](/.config/sxhkd/sxhkdrc) file is also similar to the default. Most modifications involve setting default programs (terminal, editor, launcher), as well as setting bindings for [dmenu scripts](https://github.com/devaneyJE/dmenu/tree/main/dmscripts).
 
 
 ### Xorg
-This setup utilizes the [Xorg](https://www.x.org/wiki/) display server, booting to TTY and opting for a shell script rather than a display manager to select a .xinitrc variant for a specified WM/DE. The [.xinitrc](/.config/xorg/.xinitrc_bspwm) for my main WM adds the following to the default file:
+This setup utilizes the [Xorg](https://www.x.org/wiki/) display server, booting to TTY and opting for a shell script rather than a display manager to select a `.xinitrc` variant for a specified WM/DE. The [.xinitrc](/.config/xorg/.xinitrc_bspwm) for my main WM adds the following to the default file:
 ```bash
 # more xorg
 xsetroot -cursor_name left_ptr &
@@ -41,7 +43,23 @@ exec bspwm
 
 
 ### Bar
+The current bar in use is [polybar](https://polybar.github.io/). The included configuration was adapted from the [Grayblocks](https://github.com/adi1090x/polybar-themes/tree/master/bitmap/grayblocks) theme in [polybar-themes](https://github.com/adi1090x/polybar-themes). The colors were generated using the polybar-themes [pywal script](https://github.com/adi1090x/polybar-themes/blob/master/bitmap/grayblocks/scripts/pywal.sh), referencing the [wallpaper](https://github.com/adi1090x/polybar-themes/blob/master/wallpapers/bg_3.jpg) I use (also sourced from the polybar-themes repo).
+
+Bars for separate displays are split between multiple files, and module configurations were reorganized into a `modules` directory; included modules are as follows:
+- [alsa](/.config/polybar/modules/alsa.ini)
+- [cpu](/.config/polybar/modules/cpu.ini)
+- [date](/.config/polybar/modules/date.ini)
+- [memory](/.config/polybar/modules/memory.ini)
+- [network](/.config/polybar/modules/network.ini)
+- [sep](/.config/polybar/modules/sep.ini)
+- [title](/.config/polybar/modules/title.ini)
+- [workspaces](/.config/polybar/modules/workspaces.ini)
+
+
 ### Launcher
+This configuration uses [dmenu](https://tools.suckless.org/dmenu/). My modifications to this tool are detailed in [this](https://github.com/devaneyJE/dmenu) repository.
+
+
 ### CLI
 ### Editors
 ### Wallpaper
@@ -54,7 +72,7 @@ As an always-ongoing project, I'll try to keep a list of planned additions below
 - [Eww](https://github.com/elkowar/eww) widget system
 - Additional [bspwm](#window-manager) modifications
 - [picom (jonaburg fork)](https://github.com/jonaburg/picom)
-- Minimalistic split bars for [polybar](#polybar)
+- Minimalistic split bars for [polybar](#bar)
 - Adaptation of this configuration in [LeftWM](http://leftwm.org/)
 
 
