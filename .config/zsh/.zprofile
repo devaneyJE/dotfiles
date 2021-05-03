@@ -1,7 +1,8 @@
 #!/bin/zsh
 
 # paths
-export PATH="$HOME/scripts:$PATH"
+export PATH="$HOME/.config/dmenu/dmscripts:$PATH"
+#export PATH="$HOME/.scripts:$PATH"
 export PATH="$HOME/repos/devaneyJE/toolbox:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -18,3 +19,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 #
 export ZDOTDIR="$HOME/.config/zsh"
 export ADOTDIR="$HOME/.config/zsh/.antigen"
+
+# rust
+source "$HOME/.cargo/env"
+

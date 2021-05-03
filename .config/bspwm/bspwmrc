@@ -19,5 +19,4 @@ bspc rule -a Emacs state=tiled
 # custom
 set -U SXHKD_SHELL /bin/bash &
 
-#exec $HOME/.config/polybar/scripts/pywal.sh $HOME/pix/wallpapers/bg_3.jpg&
 exec $HOME/.config/polybar/launch.sh

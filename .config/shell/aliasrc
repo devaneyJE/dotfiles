@@ -8,6 +8,11 @@ alias la='exa -aF --color=always --group-directories-first'
 alias ll='exa -l --color=always --group-directories-first'
 alias lt='exa -aTF --color=always --group-directories-first'
 alias lr='exa -aRF --color=always --group-directories-first'
+alias ols='ls'
+
+## cat to bat
+alias cat='bat'
+alias ocat='cat'
 
 ## editor
 alias vim='nvim'
@@ -35,5 +40,5 @@ alias confadd="gconf add -u ~/.config && gconf status"
 alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 
-alias rm="rm -i"
+#alias rm="rm -i"
 #alias rmr="rm -ri"

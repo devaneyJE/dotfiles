@@ -9,12 +9,11 @@ alt + Return
 
 # editor
 super + Return
-	emacs
+	kitty -e nvim
 
 # program launcher
 super + d
 	dmenu_run -h 34 -F
-	#rofi -show run
 super + f
     dmconf
 super + s
