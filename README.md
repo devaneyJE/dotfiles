@@ -27,7 +27,7 @@ The [sxhkdrc](/.config/sxhkd/sxhkdrc) file is also similar to the default. Most 
 
 
 ### Xorg
-This setup utilizes the [Xorg](https://www.x.org/wiki/) display server, booting to TTY and opting for a shell script rather than a display manager to select a `.xinitrc` variant for a specified WM/DE. The [.xinitrc](/.config/xorg/.xinitrc_bspwm) for my main WM adds the following to the default file:
+This setup utilizes the [X](https://www.x.org/wiki/) display server, booting to TTY and opting for a shell script rather than a display manager to select a `.xinitrc` variant for a specified WM/DE. The [.xinitrc](/.config/xorg/.xinitrc_bspwm) for my main WM adds the following to the default file:
 ```bash
 # more xorg
 xsetroot -cursor_name left_ptr &
