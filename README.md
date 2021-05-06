@@ -13,6 +13,7 @@ Contained in this repo are the configuration files for various utilities used on
 - Fetch Utilities: [neofetch](#cli) and [pfetch](#cli)
 - Editor(CLI): [neovim](#editors)
 - Editor(GUI): [VSCodium](#editors)
+- Music Player: [Spotify](https://www.spotify.com/) themed with [spicetify-cli](#music-player)
 - Font: [Droid Sans](https://fonts.adobe.com/fonts/droid-sans-mono)
 - Image Viewer: [feh](#wallpaper)
 
@@ -43,7 +44,7 @@ exec bspwm
 
 
 ### Bar
-The current bar in use is [polybar](https://polybar.github.io/). The included configuration was adapted from the [Grayblocks](https://github.com/adi1090x/polybar-themes/tree/master/bitmap/grayblocks) theme in [polybar-themes](https://github.com/adi1090x/polybar-themes). The colors were generated using the polybar-themes [pywal script](https://github.com/adi1090x/polybar-themes/blob/master/bitmap/grayblocks/scripts/pywal.sh), referencing the [wallpaper](https://github.com/adi1090x/polybar-themes/blob/master/wallpapers/bg_3.jpg) I use (also sourced from the polybar-themes repo).
+The current bar in use is [polybar](https://polybar.github.io/). The included configuration was adapted from the [Grayblocks](https://github.com/adi1090x/polybar-themes/tree/master/bitmap/grayblocks) theme in [polybar-themes](https://github.com/adi1090x/polybar-themes). The colors were generated using the polybar-themes [pywal script](https://github.com/adi1090x/polybar-themes/blob/master/bitmap/grayblocks/scripts/pywal.sh), referencing the [wallpaper](#wallpaper) I use (also sourced from the `polybar-themes` repo).
 
 Bars for separate displays are split between multiple files, and module configurations were reorganized into a `modules` directory; included modules are as follows:
 - [alsa](/.config/polybar/modules/alsa.ini)
@@ -62,7 +63,9 @@ This configuration uses [dmenu](https://tools.suckless.org/dmenu/). My modificat
 
 ### CLI
 ### Editors
+### Music Player
 ### Wallpaper
+![](/images/wallpapers/polybar-themes/bg_3.jpg)
 
 
 ### Future Considerations
