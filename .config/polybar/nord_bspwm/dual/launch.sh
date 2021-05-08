@@ -2,7 +2,7 @@
 
 # Add this script to your wm startup file.
 
-DIR="$HOME/.config/polybar"
+DIR="$HOME/.config/polybar/nord_bspwm/dual"
 
 # Terminate already running bar instances
 killall -q polybar
