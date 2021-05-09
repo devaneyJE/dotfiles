@@ -1,5 +1,5 @@
 ## devaneyJE: Linux dotfiles
-Contained in this repo are the configuration files for various utilities used on my personal Linux systems. The colorschemes are generally adapted from the [Nord Theme](https://www.nordtheme.com/). Active tools listed in the following sections, with planned additions listed [here](#future-considerations).
+Contained in this repo are the configuration files for various utilities used on my personal Linux systems. The colorschemes are generally adapted from the [Nord Theme](https://www.nordtheme.com/). Active tools are listed in the following sections, with planned additions listed [here](#future-considerations).
 
 ### Overview
 
