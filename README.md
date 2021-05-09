@@ -18,6 +18,8 @@ Contained in this repo are the configuration files for various utilities used on
 - Font: [Droid Sans](https://fonts.adobe.com/fonts/droid-sans-mono)
 - Image Viewer: [feh](#wallpaper)
 
+![](images/scrots/desktop.png)
+
 
 ### Window Manager
 I am using the [bspwm](https://github.com/baskerville/bspwm) tiling window manager. This is paired with [sxhkd](https://github.com/baskerville/sxhkd) as the hotkey daemon for managing keybinds.
@@ -90,6 +92,7 @@ When not on the command line, I occasionally use [VSCodium](https://vscodium.com
 
 ### Browser
 My main browser is currently [firefox](https://www.mozilla.org/en-US/firefox/new/) using [minimal-functional-fox]() and [nightTab](https://github.com/zombieFox/nightTab). I altered the [userChrome.css](/.config/mozilla/firefox/userChrome.css) file for consistency with the Nord theme. A nightTab [config](/.config/nightTab/nightTab_conf.json) file was generated using the backup/export feature of the tool.
+![](/images/scrots/firefox_nightTab.png)
 
 
 ### Music Player
