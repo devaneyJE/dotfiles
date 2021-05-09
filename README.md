@@ -1,4 +1,4 @@
-## devaneyJE - Linux dotfiles
+## devaneyJE: Linux dotfiles
 Contained in this repo are the configuration files for various utilities used on my personal Linux systems. The colorschemes are generally adapted from the [Nord Theme](https://www.nordtheme.com/). Active tools listed in the following sections, with planned additions listed [here](#future-considerations).
 
 ### Overview
@@ -21,7 +21,7 @@ Contained in this repo are the configuration files for various utilities used on
 ### Window Manager
 I am using the [bspwm](https://github.com/baskerville/bspwm) tiling window manager. This is paired with [sxhkd](https://github.com/baskerville/sxhkd) as the hotkey daemon for managing keybinds.
 
-The included [bspwmrc](/.config/bspwm/bspwmrc) file contains little beyond the basic default, adjusting workspaces for two monitors and launching both `sxhkd` and [polybar](#bar).
+The included [bspwmrc](/.config/bspwm/bspwmrc) file contains little beyond the basic default, launching both `sxhkd` and [polybar](#bar). Logic based on a query for connected displays sets workspaces and launches the appropriate variant of my polybar configuration.
 
 The [sxhkdrc](/.config/sxhkd/sxhkdrc) file is also similar to the default. Most modifications involve setting default programs (terminal, editor, launcher), as well as setting bindings for [dmenu scripts](https://github.com/devaneyJE/dmenu/tree/main/dmscripts).
 
@@ -32,7 +32,7 @@ This setup utilizes the [X](https://www.x.org/wiki/) display server, booting to 
 # more xorg
 xsetroot -cursor_name left_ptr &
 # mouse preferences
-xinput set-prop 8 299 -0.6 &
+xinput set-prop 8 298 -0.7 &
 # monitor-related
 mons --primary DP-2 -e left &
 ~/.config/feh/.fehbg &
@@ -56,14 +56,40 @@ Bars for separate displays are split between multiple files, and module configur
 - [title](/.config/polybar/modules/title.ini)
 - [workspaces](/.config/polybar/modules/workspaces.ini)
 
+There is now a separation of bar configs based on theme and attached displays. The [nord_bspwm](/.config/polybar/nord_bspwm) directory contains a version for `dual` and `single` display polybar variants.
+
 
 ### Launcher
 This configuration uses [dmenu](https://tools.suckless.org/dmenu/). My modifications to this tool are detailed in [this](https://github.com/devaneyJE/dmenu) repository.
 
 
 ### CLI
+The primary terminal emulator used is [kitty](https://sw.kovidgoyal.net/kitty/), with a secondary of [alacritty](https://github.com/alacritty/alacritty). Kitty configurations are contained in this repo, including my modified variant of [connorholyday's nord-kitty](https://github.com/connorholyday/nord-kitty/blob/master/nord.conf) theme. There are currently no files included for alacritty.
+
+While an old configuration of the [fish](/.config/fish) shell in [Dracula](https://draculatheme.com/) theme is kept here, [zsh](https://www.zsh.org/) is the only shell consistently in use. I am using [antigen](https://github.com/zsh-users/antigen) for plugin management and the [oh-my-zsh](https://ohmyz.sh/) prompt [gallois](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes#gallois).
+
+The fetch utilties currently on my system are [neofetch](/.config/neofetch/config.conf) and [pfetch](/.config/shell/pfetch.conf).
+
+
 ### Editors
+The majority of my editing is done in [neovim](https://neovim.io/). Its configuration file [init.vim](/.config/nvim/init.vim) sources my [.vimrc](/.config/vim/.vimrc). The plugin manager [Vundle](https://github.com/VundleVim/Vundle.vim) is used, with a sample of my included plugins listed below:
+
+- [`arcticicestudio/nord-vim`](https://github.com/arcticicestudio/nord-vim/blob/master/colors/nord.vim)
+- [`itchyny/lightline.vim`](https://github.com/itchyny/lightline.vim)
+- [`preservim/nerdtree`](https://github.com/preservim/nerdtree)
+- [`svermeulen/vim-easyclip`](https://github.com/svermeulen/vim-easyclip)
+
+When not on the command line, I occasionally use [VSCodium](https://vscodium.com/). A sample of my extensions:
+
+- vscodevim: `Vim`
+- arcticicestudio: `Nord`
+- golang: `Go`
+- ms-azuretools: `Docker`
+
 ### Music Player
+Spotify is themed with the [nord theme](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord) using [spicetify-cli](https://github.com/khanhas/spicetify-cli).
+
+
 ### Wallpaper
 ![](/images/wallpapers/polybar-themes/bg_3.jpg)
 
