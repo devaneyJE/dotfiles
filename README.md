@@ -15,7 +15,7 @@ Contained in this repo are the configuration files for various utilities used on
 - Editor(GUI): [VSCodium](#editors)
 - Browser: [Firefox](#browser)
 - Music Player: [Spotify](https://www.spotify.com/) themed with [spicetify-cli](#music-player)
-- Font: [Droid Sans](https://fonts.adobe.com/fonts/droid-sans-mono)
+- Font: [Droid](https://fonts.adobe.com/fonts/droid-sans-mono)
 - Image Viewer: [feh](#wallpaper)
 
 ![](images/scrots/desktop.png)
