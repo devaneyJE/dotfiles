@@ -92,6 +92,7 @@ When not on the command line, I occasionally use [VSCodium](https://vscodium.com
 
 ### Browser
 My main browser is currently [firefox](https://www.mozilla.org/en-US/firefox/new/) using [minimal-functional-fox]() and [nightTab](https://github.com/zombieFox/nightTab). I altered the [userChrome.css](/.config/mozilla/firefox/userChrome.css) file for consistency with the Nord theme. A nightTab [config](/.config/nightTab/nightTab_conf.json) file was generated using the backup/export feature of the tool.
+
 ![](/images/scrots/firefox_nightTab.png)
 
 
