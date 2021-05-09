@@ -13,6 +13,7 @@ Contained in this repo are the configuration files for various utilities used on
 - Fetch Utilities: [neofetch](#cli) and [pfetch](#cli)
 - Editor(CLI): [neovim](#editors)
 - Editor(GUI): [VSCodium](#editors)
+- Browser: [Firefox](#browser)
 - Music Player: [Spotify](https://www.spotify.com/) themed with [spicetify-cli](#music-player)
 - Font: [Droid Sans](https://fonts.adobe.com/fonts/droid-sans-mono)
 - Image Viewer: [feh](#wallpaper)
@@ -85,6 +86,11 @@ When not on the command line, I occasionally use [VSCodium](https://vscodium.com
 - arcticicestudio: `Nord`
 - golang: `Go`
 - ms-azuretools: `Docker`
+
+
+### Browser
+My main browser is currently [firefox](https://www.mozilla.org/en-US/firefox/new/) using [minimal-functional-fox]() and [nightTab](https://github.com/zombieFox/nightTab). I altered the [userChrome.css](/.config/mozilla/firefox/userChrome.css) file for consistency with the Nord theme. A nightTab [config](/.config/nightTab/nightTab_conf.json) file was generated using the backup/export feature of the tool.
+
 
 ### Music Player
 Spotify is themed with the [nord theme](https://github.com/morpheusthewhite/spicetify-themes/tree/master/Nord) using [spicetify-cli](https://github.com/khanhas/spicetify-cli).
